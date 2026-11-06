@@ -11,11 +11,20 @@
 
   /* ---------- language ---------- */
 
+  // Each language has its own URL: "/" is Turkish, "/en/" is English (the page's <html lang> says which).
+  // Search engines index both through hreflang. Switching languages re-renders in place and swaps the URL.
   const LANG_KEY = 'kes-lang';
+  const PAGE_LANG = document.documentElement.lang === 'en' ? 'en' : 'tr';
+  const ROOT = PAGE_LANG === 'en' ? location.pathname.replace(/en\/(index\.html)?$/, '') : location.pathname.replace(/index\.html$/, '');
+  const PATHS = { tr: ROOT, en: ROOT + 'en/' };
+  const BOT = /bot|crawl|spider|slurp|lighthouse|headless|preview|facebookexternalhit/i.test(navigator.userAgent);
   let lang = detectLang();
+  if (lang !== PAGE_LANG) history.replaceState(null, '', PATHS[lang] + location.search + location.hash);
 
-  // a saved choice wins; otherwise Turkish if the browser lists Turkish at all
+  // /en/ is always English. On "/", a saved choice wins, else Turkish if the browser lists Turkish at all.
+  // Crawlers always get the page's own language so each URL is indexed with matching text.
   function detectLang() {
+    if (PAGE_LANG === 'en' || BOT) return PAGE_LANG;
     try {
       const saved = localStorage.getItem(LANG_KEY);
       if (saved === 'tr' || saved === 'en') return saved;
@@ -425,7 +434,18 @@
     const hdr = $('#hdr');
     const bar = $('#hdr-bar');
     const btn = $('#menu-btn');
+    const logoEl = $('#logo');
     let ticking = false;
+
+    // compact logo scale = target size / current fluid font size (both from CSS)
+    const fitLogo = () => {
+      const cs = getComputedStyle(logoEl);
+      const big = parseFloat(cs.fontSize);
+      const small = parseFloat(cs.getPropertyValue('--logo-small'));
+      if (big > 0 && small > 0) logoEl.style.setProperty('--logo-s', Math.min(1, small / big).toFixed(4));
+    };
+    fitLogo();
+    addEventListener('resize', fitLogo);
 
     const update = () => {
       ticking = false;
@@ -692,6 +712,7 @@
   function setLang(next) {
     lang = next;
     try { localStorage.setItem(LANG_KEY, lang); } catch (e) { /* storage blocked */ }
+    history.replaceState(null, '', PATHS[lang] + location.search + location.hash);
     preview.reset();
     applyStatic();
     renderAll();
