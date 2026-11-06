@@ -1,0 +1,67 @@
+<!doctype html>
+<!--
+  Source of the link-preview images (assets/img/og-tr.png, og-en.png) and the PNG icons.
+  Rendered with a headless browser, e.g. from the repo root:
+    msedge --headless --hide-scrollbars --window-size=1200,630 --virtual-time-budget=8000 --screenshot=og-tr.png "file:///.../tools/og.html?lang=tr"
+  ?icon=1 renders the 512px app icon instead (?icon=1&square=1 without rounded corners).
+-->
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500;700&display=block" rel="stylesheet">
+<style>
+  :root { --paper: #f2f0e9; --ink: #121413; --ink-2: #393c39; --muted: #656862; --line: #d3cfc3; --dot: #d6d2c5; --signal-hi: #e0582a; --led: #2f9e5f; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: var(--paper); color: var(--ink); font-family: "Archivo", sans-serif; }
+  .card {
+    position: relative; width: 1200px; height: 630px; padding: 64px 72px;
+    background-image: radial-gradient(var(--dot) 1.4px, transparent 1.6px); background-size: 28px 28px; background-position: 14px 14px;
+    display: flex; flex-direction: column;
+  }
+  .top { display: flex; justify-content: space-between; align-items: center; font: 500 22px/1 "JetBrains Mono", monospace; color: var(--muted); }
+  .top span { display: inline-flex; align-items: center; gap: 12px; }
+  .led { width: 12px; height: 12px; border-radius: 50%; background: var(--led); box-shadow: 0 0 0 5px color-mix(in srgb, var(--led) 22%, transparent); }
+  .logo { margin-top: 92px; font: 700 112px/1 "JetBrains Mono", monospace; letter-spacing: -.03em; white-space: nowrap; }
+  .logo i { display: inline-block; width: 8px; height: 112px; margin-left: 6px; vertical-align: -14px; background: var(--signal-hi); }
+  .sub { margin-top: 34px; max-width: 960px; font: 600 42px/1.18 "Archivo", sans-serif; font-stretch: 108%; letter-spacing: -.01em; color: var(--ink-2); }
+  .tags { margin-top: auto; display: flex; gap: 12px; font: 500 21px/1 "JetBrains Mono", monospace; }
+  .tags span { padding: 10px 14px; border: 1.5px solid var(--ink); border-radius: 4px; background: var(--paper); }
+  .trace { position: absolute; right: 0; bottom: 70px; width: 330px; height: 120px; color: var(--signal-hi); }
+  .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 10px; background: var(--signal-hi); }
+
+  /* app icon */
+  body.icon { width: 512px; height: 512px; background: transparent; }
+  .ic { display: block; width: 512px; height: 512px; }
+</style>
+</head>
+<body>
+<script>
+  const q = new URLSearchParams(location.search);
+  const T = {
+    tr: { status: 'Fırat Üniversitesi · Bilgisayar Mühendisliği', sub: 'Otonom sistemler için elektronik ve gömülü yazılım geliştiriyorum.' },
+    en: { status: 'Firat University · Computer Engineering', sub: 'I build electronics and embedded software for autonomous systems.' }
+  }[q.get('lang') === 'en' ? 'en' : 'tr'];
+  if (q.get('icon')) {
+    document.body.className = 'icon' + (q.get('square') ? ' square' : '');
+    // same drawing as /favicon.svg
+    const rx = q.get('square') ? 0 : 6;
+    document.body.innerHTML = `<svg class="ic" viewBox="0 0 32 32"><rect width="32" height="32" rx="${rx}" fill="#121413"/><text x="7" y="23" font-family="JetBrains Mono" font-weight="700" font-size="19" fill="#f2f0e9">k</text><rect x="20" y="8" width="2.5" height="17" fill="#e0582a"/></svg>`;
+  } else {
+    document.body.innerHTML = `
+      <div class="card">
+        <div class="top"><span>keremefesezek.github.io</span><span><i class="led"></i>${T.status}</span></div>
+        <div class="logo">keremefesezek<i></i></div>
+        <div class="sub">${T.sub}</div>
+        <div class="tags"><span>STM32</span><span>ESP32</span><span>FreeRTOS</span><span>ArduPilot</span><span>T3 Gemstone O1</span></div>
+        <svg class="trace" viewBox="0 0 330 120" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M0 64 L20 58 L36 70 L52 56 L68 68 L84 60 L100 66 L116 57 L132 69 L148 61 L160 64 L170 16 L180 108 L190 30 L200 92 L210 52 L222 70 L238 58 L254 68 L270 60 L286 66 L302 59 L318 65 L330 62"/>
+        </svg>
+        <div class="bar"></div>
+      </div>`;
+  }
+</script>
+</body>
+</html>

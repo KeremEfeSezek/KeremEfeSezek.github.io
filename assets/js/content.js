@@ -9,7 +9,7 @@ window.SITE = {
     githubLabel: 'github.com/KeremEfeSezek',
     linkedin: 'https://www.linkedin.com/in/keremefesezek',
     linkedinLabel: 'linkedin.com/in/keremefesezek',
-    cv: { tr: 'assets/cv/Kerem-Efe-Sezek-CV-TR.pdf', en: 'assets/cv/Kerem-Efe-Sezek-CV-EN.pdf' },
+    cv: { tr: '/assets/cv/Kerem-Efe-Sezek-CV-TR.pdf', en: '/assets/cv/Kerem-Efe-Sezek-CV-EN.pdf' },
     source: 'https://github.com/KeremEfeSezek/KeremEfeSezek.github.io'
   },
 
