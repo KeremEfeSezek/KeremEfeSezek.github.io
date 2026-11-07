@@ -21,7 +21,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'https://keremefesezek.github.io/';
 
 // Paste the content value of Google Search Console's "HTML tag" here to verify the site.
-const GOOGLE_SITE_VERIFICATION = '';
+const GOOGLE_SITE_VERIFICATION = 'sbipD_O8OPR93pn6F17DlGRZswMTGSp6QvcxR0soxds';
 
 const read = p => readFileSync(join(ROOT, p), 'utf8');
 const sandbox = { window: {} };
