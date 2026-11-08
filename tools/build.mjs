@@ -63,7 +63,11 @@ function seoBlock(lang) {
   const ld = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'WebSite', '@id': BASE + '#website', url: BASE, name: 'Kerem Efe Sezek', inLanguage: ['tr', 'en'] },
+      // name = the site name Google shows above the result; alternateName is its fallback
+      {
+        '@type': 'WebSite', '@id': BASE + '#website', url: BASE, name: 'Kerem Efe Sezek',
+        alternateName: new URL(BASE).hostname, inLanguage: ['tr', 'en']
+      },
       {
         '@type': 'ProfilePage', '@id': url + '#page', url, name: p.title, description: p.description,
         inLanguage: lang, isPartOf: { '@id': BASE + '#website' }, mainEntity: { '@id': BASE + '#person' }

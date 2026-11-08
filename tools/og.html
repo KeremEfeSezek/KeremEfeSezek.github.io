@@ -34,6 +34,7 @@
 
   /* app icon */
   body.icon { width: 512px; height: 512px; background: transparent; }
+  body.icon.square { background: #121413; }
   .ic { display: block; width: 512px; height: 512px; }
 </style>
 </head>
@@ -46,9 +47,8 @@
   }[q.get('lang') === 'en' ? 'en' : 'tr'];
   if (q.get('icon')) {
     document.body.className = 'icon' + (q.get('square') ? ' square' : '');
-    // same drawing as /favicon.svg
-    const rx = q.get('square') ? 0 : 6;
-    document.body.innerHTML = `<svg class="ic" viewBox="0 0 32 32"><rect width="32" height="32" rx="${rx}" fill="#121413"/><text x="7" y="23" font-family="JetBrains Mono" font-weight="700" font-size="19" fill="#f2f0e9">k</text><rect x="20" y="8" width="2.5" height="17" fill="#e0582a"/></svg>`;
+    // /favicon.svg itself; the square variant fills its rounded corners with the same dark
+    document.body.innerHTML = '<img class="ic" src="../favicon.svg" alt="">';
   } else {
     document.body.innerHTML = `
       <div class="card">
