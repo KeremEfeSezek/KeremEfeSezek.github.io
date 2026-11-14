@@ -348,6 +348,55 @@ window.FIG = (() => {
       T(145, 160, L(lang, 'kıyıdan ≥ 50 m', '≥ 50 m from shore'), 'fxs'));
   }
 
+  // SARA's internals are private to the team: these two show the structure only, with every part blacked out
+  const redact = (x, y, w) => `<rect class="fdot" x="${x}" y="${y}" width="${w}" height="6" rx="1.5" opacity=".28"/>`;
+  const lock = (x, y) => `<rect x="${x - 5.5}" y="${y}" width="11" height="9" rx="1.5"/><path d="M${x - 3} ${y}v-3a3 3 0 0 1 6 0v3"/>`;
+  function redBox(x, y, w, h, t, hl) {
+    const cx = x + w / 2;
+    return `<g class="fb${hl ? ' fb-hl' : ''}"><rect class="fp" x="${x + 0.5}" y="${y + 0.5}" width="${w}" height="${h}" rx="3"/>` +
+      T(cx, y + h / 2 - 2, t) + redact(cx - 20, y + h / 2 + 4, 40) + `</g>`;
+  }
+
+  // mission computer: sensors in, actuators out
+  function gkb(lang) {
+    const slot = (x, cy) => rect(x, cy - 12, 84, 24, 'fp', 3) + redact(x + 14, cy - 3, 56);
+    const ys = [50, 84, 118, 152];
+    let io = '';
+    ys.forEach(cy => {
+      io += slot(10, cy) + `<path d="M94.5 ${cy}H110"/>`;
+      io += `<path d="M250 ${cy}H266"/>${head(266.5, cy, 'l')}` + slot(266, cy);
+    });
+    return svg(360, 200,
+      T(52, 28, L(lang, 'sensörler', 'sensors'), 'fs') + T(308, 28, L(lang, 'eyleyiciler', 'actuators'), 'fs') +
+      `<path d="M110 50V152M250 50V152" stroke-width="1.6"/>` +
+      `<path d="M110 101H120.5"/>${head(120.5, 101, 'l')}<path d="M240.5 101H250"/>` +
+      io +
+      `<g class="fb fb-hl"><rect class="fp" x="120.5" y="66.5" width="120" height="70" rx="3"/>` +
+      T(180, 92, L(lang, 'Görev kontrol', 'Mission')) + T(180, 105, L(lang, 'bilgisayarı', 'computer')) + lock(180, 117) + `</g>` +
+      T(180, 190, L(lang, 'ayrıntılar takıma özel', 'details kept within the team'), 'fs fhot'));
+  }
+
+  // power path: battery, protection, arm and e-stop, then the rails
+  function power(lang) {
+    const bat = { x: 10, y: 14, w: 92, h: 40 };
+    const prot = { x: 10, y: 80, w: 92, h: 40 };
+    const arm = { x: 10, y: 146, w: 92, h: 40 };
+    let rails = '';
+    [[34, 3], [100, 2], [166, 3]].forEach(([cy, n], i) => {
+      rails += `<path d="M118 ${cy}H132.5"/>${head(132.5, cy, 'l')}` +
+        redBox(132, cy - 15, 62, 30, L(lang, 'Hat ', 'Rail ') + (i + 1)) + `<path d="M194.5 ${cy}H206"/>`;
+      for (let k = 0; k < n; k++) rails += rect(206 + k * 50, cy - 9, 44, 18, 'fp', 3) + redact(214 + k * 50, cy - 3, 28);
+    });
+    return svg(360, 206,
+      wire(bat, prot, { from: 'b', to: 't' }) + wire(prot, arm, { from: 'b', to: 't' }) +
+      `<path d="M102.5 166H118M118 34V166" stroke-width="1.8"/>` +
+      redBox(bat.x, bat.y, bat.w, bat.h, L(lang, 'Batarya', 'Battery')) +
+      redBox(prot.x, prot.y, prot.w, prot.h, L(lang, 'Koruma', 'Protection')) +
+      redBox(arm.x, arm.y, arm.w, arm.h, L(lang, 'Acil durdurma', 'E-stop'), true) +
+      rails +
+      T(256, 202, L(lang, 'değerler ve parçalar takıma özel', 'values and parts kept within the team'), 'fs fhot'));
+  }
+
   /* ---------- Air Defense Systems ---------- */
 
   // focal point tuning, drawn from the lens sketches
@@ -513,6 +562,6 @@ window.FIG = (() => {
 
   return {
     console: console_, vtol, robot, ota, blok, boards3, process, app,
-    mission, route, optics, bench, pcbdraft, grad, pipeline, mesh, uniguide, fukampus
+    mission, route, gkb, power, optics, bench, pcbdraft, grad, pipeline, mesh, uniguide, fukampus
   };
 })();
