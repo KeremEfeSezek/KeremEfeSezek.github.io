@@ -156,7 +156,7 @@ svg, canvas { display: block; }
 .lg { display: inline-block; min-height: 1em; min-width: 1px; }
 .lg-ch { display: inline-block; transition: color .9s ease; }
 .lg-hl { color: var(--lg-accent); }
-.lg-enter { animation: lg-enter .28s ease-out both; }
+.lg-enter { animation: lg-enter .22s ease-out both; }
 .lg-caret { display: inline-block; position: relative; width: 0; height: 0; }
 .lg-caret::before {
   content: ""; position: absolute; left: -.035em; bottom: -.14em;
@@ -166,7 +166,7 @@ svg, canvas { display: block; }
 .lg-click::after {
   content: ""; position: absolute; left: -.32em; top: -.72em; width: .6em; height: .6em;
   border-radius: 50%; border: 2px solid var(--lg-caret); pointer-events: none;
-  animation: lg-ping .45s ease-out both;
+  animation: lg-ping .38s ease-out both;
 }
 .lg-key {
   position: absolute; left: 0; bottom: 100%; margin-bottom: 10px;
