@@ -27,7 +27,7 @@ window.SITE = {
       'hero.status': 'Fırat Üniversitesi · Bilgisayar Mühendisliği · son sınıf',
       'hero.title': 'Otonom sistemler için elektronik ve gömülü yazılım geliştiriyorum.',
       'hero.sub': "Bu yaz T3 Vakfı'nda uçuş kontrolünü Pixhawk'tan T3 Gemstone O1'e taşıdığımız bir VTOL İHA'nın ilk uçuşuna kadar, Repkon'da titreşimden anomali tespiti ve 12 farklı sensör kartını destekleyen bir izleme uygulaması üzerinde çalıştım. Şu an T3 Gemstone O1 ekosisteminde gönüllü geliştiriciyim.",
-      'hero.cta1': 'Deneyimime bak',
+      'hero.cta1': 'Deneyimime göz atın',
       'hero.cta2': 'E-posta gönder',
 
       'scope.title': 'İVME · X Y Z',
@@ -36,24 +36,24 @@ window.SITE = {
       'scope.anom': 'ANOMALİ',
       'scope.thr': 'Eşik',
       'scope.events': 'Olay',
-      'scope.capHover': 'Repkon stajımdaki problemin küçük bir simülasyonu: titreşim sinyalinde anomali tespiti. İmleci grafiğin üzerinde hızlıca gezdir, sinyali sars.',
-      'scope.capTouch': 'Repkon stajımdaki problemin küçük bir simülasyonu: titreşim sinyalinde anomali tespiti. Parmağını grafiğin üzerinde gezdir, sinyali sars.',
+      'scope.capHover': 'Titreşim verisinde anomali tespitinin basit bir simülasyonu. İmleci grafiğin üzerinde hızlıca gezdirerek titreşimi artırabilirsiniz.',
+      'scope.capTouch': 'Titreşim verisinde anomali tespitinin basit bir simülasyonu. Parmağınızı grafiğin üzerinde gezdirerek titreşimi artırabilirsiniz.',
 
       'f1': "İHA'nın uçuş kontrolünü Pixhawk'tan T3 Gemstone O1'e taşıdık; araç bu kartla ilk uçuşunu yaptı.",
       'f2': "farklı ST sensör kartını destekleyen izleme uygulamasını Repkon'da Raspberry Pi 5 üzerinde geliştirdim.",
-      'f3': "TEKNOFEST takımındayım; Su Altı Roket Takımı'nda kaptan ve elektronik birim sorumlusuyum.",
+      'f3': "TEKNOFEST takımında yer aldım; 2026'da Su Altı Roket Takımı'nın kaptanı ve elektronik birim sorumlusuydum.",
       'f4': 'Haziran ayında mezun olmayı bekliyorum.',
 
       'about.title': 'Hakkımda',
-      'about.p1': "Fırat Üniversitesi'nde Bilgisayar Mühendisliği son sınıf öğrencisiyim; gömülü sistemlere ve düşük seviyeli yazılıma odaklanıyorum.",
-      'about.p2': "2026 yazında iki staj yaptım. T3 Vakfı Deneyap Kart Birimi'nde bir VTOL İHA'nın uçuş kontrolünü Pixhawk'tan T3 Gemstone O1'e taşıdık; kablajı, alıcı entegrasyonunu ve kalibrasyonu yaptım, araç bu kartla ilk uçuşunu yaptı. Aynı stajda bir haritalandırma robotunun alt sistem yazılımını geliştirdim, Deneyap Kart için örnek projeler ve Fritzing parçası hazırladım. Repkon'da titreşimden anomali tespiti için kart seçip gerçek zamanlı tespit yapan gömülü yazılım yazdım; ardından Raspberry Pi 5 üzerinde 12 farklı ST sensör kartını destekleyen bir izleme uygulaması geliştirdim.",
-      'about.p3': 'STM32 ve ESP32 üzerinde firmware, çevre birimi entegrasyonu, güç yönetimi ve sistem mimarisi deneyimimi büyük ölçüde TEKNOFEST takımlarında edindim. İlgi alanlarım otonom sistemler, savunma sanayii, robotik ve gömülü yazılım.',
+      'about.p1': "Merhabalar, ben Kerem Efe Sezek. Fırat Üniversitesi'nde Bilgisayar Mühendisliği son sınıf öğrencisiyim ve gömülü sistemler üzerine çalışıyorum.",
+      'about.p2': 'Bu alanda en sevdiğim şey, yazdığım kodun bir kartın üzerinde çalışıp gerçek bir şeye dönüştüğünü görmek: bir sensörden ilk anlamlı verinin gelmesi, bir motorun dönmeye başlaması ya da bir aracın havalanması. Bu ilgi üniversitede katıldığım TEKNOFEST takımlarıyla büyüdü; firmware yazmayı, sensör ve güç tasarımını ve bir sistemi baştan sona düşünmeyi büyük ölçüde orada öğrendim.',
+      'about.p3': "2026 yazında T3 Vakfı ve Repkon'da staj yaptım; İpek Yolu Merkezi'nde de gönüllü olarak öğrenci projelerine mentörlük yapıyorum. İleride otonom sistemler, savunma sanayii ve robotik alanlarında çalışmak istiyorum. Deneyimlerimi ve projelerimi aşağıda bulabilirsiniz.",
       'about.now': 'Şu an',
       'about.loc': 'Elazığ, Türkiye',
 
       'exp.title': 'Deneyim',
-      'exp.hintHover': 'Bugünden geriye doğru. Noktalı çizgiyle işaretli satırların üzerine gel, detay penceresi açılır.',
-      'exp.hintTouch': 'Bugünden geriye doğru. Noktalı çizgiyle işaretli satırlara dokun, detay açılır.',
+      'exp.hintHover': 'Bugünden geriye doğru. Noktalı çizgili satırların üzerine geldiğinizde ayrıntılar açılır.',
+      'exp.hintTouch': 'Bugünden geriye doğru. Noktalı çizgili satırlara dokunduğunuzda ayrıntılar açılır.',
       'exp.now': 'Şimdi',
       'exp.present': 'Devam ediyor',
       'exp.fig': 'Şekil',
@@ -64,17 +64,17 @@ window.SITE = {
       'k.edu': 'Eğitim',
 
       'proj.title': 'Projeler',
-      'proj.sub': 'TEKNOFEST takımları, bitirme projesi ve ders projeleri. Şekiller proje raporlarından ve notlarımdan sadeleştirildi; + işaretli düğmeler ek şekil açar.',
+      'proj.sub': 'TEKNOFEST takımlarında, derslerde ve bitirme projemde gerçekleştirdiğim projeleri buradan inceleyebilirsiniz.',
 
       'skills.title': 'Yetkinlikler',
-      'skills.sub': 'Devreden uygulamaya, katman katman. İşaretli olanların üzerine gelince nerede kullandığımı görebilirsin.',
+      'skills.sub': 'Devreden uygulamaya, katman katman. İşaretli olanların üzerine geldiğinizde nerede kullandığımı görebilirsiniz.',
       'skills.used': 'Kullandığım yerler',
       'skills.langs': 'Diller',
       'skills.certs': 'Sertifikalar ve eğitimler',
       'skills.native': 'Ana dil',
 
       'contact.title': 'İletişim',
-      'contact.lead': 'Staj, iş ya da bir proje hakkında konuşmak için yazabilirsin.',
+      'contact.lead': 'Staj, iş ya da bir proje hakkında konuşmak için bana yazabilirsiniz.',
       'contact.copy': 'Kopyala',
       'contact.copied': 'Kopyalandı',
       'contact.cvTr': 'Özgeçmiş, Türkçe (PDF)',
@@ -112,24 +112,24 @@ window.SITE = {
       'scope.anom': 'ANOMALY',
       'scope.thr': 'Threshold',
       'scope.events': 'Events',
-      'scope.capHover': 'A small simulation of the problem from my Repkon internship: anomaly detection on a vibration signal. Move the pointer quickly across the plot to shake it.',
-      'scope.capTouch': 'A small simulation of the problem from my Repkon internship: anomaly detection on a vibration signal. Drag a finger across the plot to shake it.',
+      'scope.capHover': 'A simple simulation of anomaly detection on vibration data. Move the pointer quickly across the plot to add vibration.',
+      'scope.capTouch': 'A simple simulation of anomaly detection on vibration data. Drag a finger across the plot to add vibration.',
 
       'f1': 'UAV moved from Pixhawk to the T3 Gemstone O1; it made its first flight on the board.',
       'f2': 'different ST sensor boards supported by the monitoring app I built on a Raspberry Pi 5 at Repkon.',
-      'f3': 'TEKNOFEST teams; captain and electronics lead of the Underwater Rocket Team.',
+      'f3': 'TEKNOFEST teams; in 2026 I was captain and electronics lead of the Underwater Rocket Team.',
       'f4': 'Expected graduation, in June.',
 
       'about.title': 'About',
-      'about.p1': "I'm a final-year Computer Engineering student at Firat University, focused on embedded systems and low-level software.",
-      'about.p2': 'In summer 2026 I did two internships. At the T3 Foundation Deneyap Kart Unit we moved a VTOL UAV from Pixhawk to the T3 Gemstone O1; I did the wiring, receiver integration and calibration, and the aircraft made its first flight on the board. In the same internship I wrote the subsystem software of a mapping robot and prepared example projects and a Fritzing part for Deneyap Kart. At Repkon I selected a board for vibration anomaly detection and wrote embedded software that detects anomalies in real time, then built a Raspberry Pi 5 monitoring app that supports 12 different ST sensor boards.',
-      'about.p3': 'Most of my experience with STM32 and ESP32 firmware, peripheral integration, power management and system architecture comes from TEKNOFEST teams. I am interested in autonomous systems, the defense industry, robotics and embedded software.',
+      'about.p1': "Hi, I'm Kerem Efe Sezek. I'm a final-year Computer Engineering student at Firat University, and I work on embedded systems.",
+      'about.p2': 'What I enjoy most is seeing code I wrote run on a board and turn into something real: the first meaningful reading from a sensor, a motor starting to spin, an aircraft lifting off. That interest grew with the TEKNOFEST teams I joined at university, where I learned most of what I know about writing firmware, designing sensor and power systems, and thinking a system through from start to finish.',
+      'about.p3': 'In summer 2026 I interned at the T3 Foundation and Repkon, and I volunteer as a mentor for student projects at the Ipek Yolu Center. I want to work on autonomous systems, the defense industry and robotics. You can find my experience and projects below.',
       'about.now': 'Now',
       'about.loc': 'Elazig, Turkey',
 
       'exp.title': 'Experience',
-      'exp.hintHover': 'From today backwards. Hover the lines with a dotted underline to open a detail window.',
-      'exp.hintTouch': 'From today backwards. Tap the lines with a dotted underline to open the details.',
+      'exp.hintHover': 'From today backwards. Hover over a line with a dotted underline to see the details.',
+      'exp.hintTouch': 'From today backwards. Tap a line with a dotted underline to see the details.',
       'exp.now': 'Now',
       'exp.present': 'Present',
       'exp.fig': 'Figure',
@@ -140,10 +140,10 @@ window.SITE = {
       'k.edu': 'Education',
 
       'proj.title': 'Projects',
-      'proj.sub': 'TEKNOFEST teams, my graduation project and course projects. Figures are simplified from project reports and my notes; buttons marked + open extra figures.',
+      'proj.sub': 'Here you can look through the projects I have worked on with TEKNOFEST teams, in my courses and for my graduation project.',
 
       'skills.title': 'Skills',
-      'skills.sub': 'From circuits to applications, layer by layer. Hover the marked ones to see where I used them.',
+      'skills.sub': 'From circuits to applications, layer by layer. Hover over the marked ones to see where I used them.',
       'skills.used': 'Where I used it',
       'skills.langs': 'Languages',
       'skills.certs': 'Certificates and training',
@@ -169,9 +169,8 @@ window.SITE = {
 
   now: [
     { tr: 'T3 Gemstone O1 ekosisteminde gönüllü geliştiriciyim.', en: 'Volunteer developer in the T3 Gemstone O1 ecosystem.' },
-    { tr: "TEKNOFEST Su Altı Roket Takımı'nda (SARA) kaptan ve elektronik birim sorumlusuyum.", en: 'Captain and electronics lead of the TEKNOFEST Underwater Rocket Team (SARA).' },
     { tr: 'Bitirme projem: mini keşif robotları için yapay zekâ ile görüntü anlamlandırma, T3 Gemstone O1 üzerinde.', en: 'Graduation project: AI-based image understanding for mini reconnaissance robots, on the T3 Gemstone O1.' },
-    { tr: "İpek Yolu Merkezi'nde gömülü sistem projelerinde çalışıyor, robotik projelerinde mentörlük yapıyorum.", en: 'Working on embedded projects and mentoring robotics projects at the Ipek Yolu Center.' }
+    { tr: "İpek Yolu Merkezi'nde gönüllü olarak öğrenci projelerine mentörlük yapıyorum.", en: 'Volunteer mentor for student projects at the Ipek Yolu Center.' }
   ],
 
   experience: [
@@ -205,20 +204,20 @@ window.SITE = {
           tags: ['Python', 'PyQt5', 'pyqtgraph', 'Raspberry Pi 5']
         },
         {
-          id: 'repkon-rt',
-          fig: 'process',
-          text: { tr: 'Seçtiğim NUCLEO-8L152R8 üzerinde, ivmeölçerden SPI ile okunan titreşim verisinde gerçek zamanlı anomali tespiti yapan gömülü yazılım yazdım.', en: 'Wrote embedded software on the NUCLEO-8L152R8 I selected that detects anomalies in real time in vibration data read from an accelerometer over SPI.' },
-          title: { tr: 'Titreşimden anomali tespiti', en: 'Anomaly detection from vibration' },
-          more: { tr: 'Şekilde izlediğim süreç var: veri toplama, normal çalışmanın referans modelini (baseline) kurma, sürekli karşılaştırma, eşik aşımı ve bakım ekibine yönlendirme. Yolda ST-LINK sorunlarını ve SPI/CS pin çakışmasını giderip ivme verisini seri port üzerinden doğruladım. Sayfanın en üstündeki osiloskop bu işin basitleştirilmiş bir simülasyonu.', en: 'The figure shows the process I followed: data collection, building a baseline of normal operation, continuous comparison, threshold crossing and routing to the maintenance team. Along the way I fixed ST-LINK issues and an SPI/CS pin conflict and verified the acceleration data over a serial port. The oscilloscope at the top of this page is a simplified simulation of it.' },
-          tags: ['STM8', 'SPI', 'MEMS', { tr: 'Anomali tespiti', en: 'Anomaly detection' }]
-        },
-        {
           id: 'repkon-boards',
           fig: 'boards3',
-          text: { tr: 'STEVAL-MKI179V1 titreşim sensörünü sürecek kartı seçmek için STM32F103C8T6, NUCLEO-L476RG ve NUCLEO-8L152R8 kartlarını proje gereksinimlerine göre karşılaştırdım.', en: 'Compared STM32F103C8T6, NUCLEO-L476RG and NUCLEO-8L152R8 against the project requirements to pick the board that drives the STEVAL-MKI179V1 vibration sensor.' },
-          title: { tr: 'Kart seçimi', en: 'Board selection' },
-          more: { tr: 'Üç geliştirme kartının proje gereksinimlerine göre karşılaştırmalı analizi.', en: 'A comparative analysis of three development boards against the project requirements.' },
+          text: { tr: 'STEVAL-MKI179V1 titreşim sensör kartıyla çalışacak geliştirme kartı için STM32F103C8T6, NUCLEO-L476RG ve NUCLEO-8L152R8 kartlarını işlemci, bellek, çevre birimi desteği ve güç tüketimi açısından karşılaştırdım.', en: 'For the development board that would work with the STEVAL-MKI179V1 vibration sensor board, I compared the STM32F103C8T6, NUCLEO-L476RG and NUCLEO-8L152R8 on processor, memory, peripheral support and power consumption.' },
+          title: { tr: 'Kart karşılaştırması', en: 'Board comparison' },
+          more: { tr: 'Üç geliştirme kartının proje gereksinimlerine göre karşılaştırmalı analizi. İlk bağlantıları NUCLEO-8L152R8 üzerinde yaptım.', en: 'A comparative analysis of three development boards against the project requirements. I made the first connections on the NUCLEO-8L152R8.' },
           tags: ['STM32', 'STM8', 'NUCLEO']
+        },
+        {
+          id: 'repkon-rt',
+          fig: 'process',
+          text: { tr: 'NUCLEO-8L152R8 (8-bit STM8) üzerinde LIS2DW12 ivmeölçerini SPI ile okuyan ve X, Y, Z ivme verisini seri port üzerinden bilgisayara aktaran gömülü yazılımı yazdım.', en: 'Wrote embedded software on the NUCLEO-8L152R8 (8-bit STM8) that reads the LIS2DW12 accelerometer over SPI and streams X, Y, Z acceleration data to a PC over a serial port.' },
+          title: { tr: 'Anomali tespiti için ivme verisi', en: 'Acceleration data for anomaly detection' },
+          more: { tr: 'Stajın başında anomali tespitinin nasıl işlediğini araştırdım; şekildeki süreç bu araştırmadan: veri toplama, normal çalışmanın referansını (baseline) kurma, sürekli karşılaştırma, eşik aşımı ve bakım ekibine yönlendirme. Ben ilk halka olan veri toplama tarafında çalıştım. Adaptör kartta pull-up direnci olmadığı için I²C yerine SPI\'ye geçtim; CS için kullandığım pinin reset (NRST) işleviyle çakıştığını bulup CS\'yi başka bir pine taşıdım. ST-LINK bağlantı sorunlarını da çözdükten sonra okunan toplam ivmenin yaklaşık 1 g çıkmasıyla sensörün doğru çalıştığını doğruladım.', en: 'At the start of the internship I researched how anomaly detection works; the figure shows the process from that research: data collection, building a baseline of normal operation, continuous comparison, threshold crossing and routing to the maintenance team. My part was the first link, data collection. The adapter board had no pull-up resistors, so I switched from I²C to SPI; I found that the pin I used for CS doubled as the reset (NRST) pin and moved CS to another pin. Once the ST-LINK connection issues were fixed as well, a total acceleration of about 1 g confirmed that the sensor was working correctly.' },
+          tags: ['STM8', 'SPI', 'UART', 'MEMS']
         }
       ]
     },
@@ -275,15 +274,16 @@ window.SITE = {
     },
     {
       id: 'ipekyolu',
+      kind: 'volunteer',
       from: '2024-11',
       to: null,
       org: { tr: 'İpek Yolu Uluslararası Çocuk ve Gençlik Çalışmaları Merkezi', en: "Ipek Yolu International Youth and Children's Center" },
-      role: { tr: 'Öğrenci Mühendis · Girişimci Kuluçka Birimi', en: 'Student Engineer · Entrepreneurship Incubation Unit' },
+      role: { tr: 'Girişimci Kuluçka Birimi Gönüllüsü', en: 'Volunteer · Entrepreneurship Incubation Unit' },
       place: { tr: 'Elazığ', en: 'Elazig' },
       items: [
-        { id: 'iy-1', text: { tr: 'Gömülü sistem projelerinde geliştirme, test ve donanım-yazılım entegrasyonu süreçlerinde görev alıyorum.', en: 'Working on development, testing and hardware-software integration in embedded system projects.' } },
+        { id: 'iy-1', text: { tr: 'Merkezde gönüllü olarak TEKNOFEST projeleri gerçekleştirdik; gömülü sistem tarafında geliştirme, test ve donanım-yazılım entegrasyonunda çalıştım.', en: 'As volunteers we carried out TEKNOFEST projects at the center; I worked on development, testing and hardware-software integration on the embedded side.' } },
         { id: 'iy-2', text: { tr: 'Öğrencilere yönelik teknik atölyeleri ve sosyal etki odaklı etkinlikleri organize ediyorum.', en: 'Organizing technical workshops and social-impact events for students.' } },
-        { id: 'iy-3', text: { tr: 'Robotik projelerinde devre temelleri ve mikrodenetleyici mantığı üzerine mentörlük yapıyorum.', en: 'Mentoring robotics projects on circuit fundamentals and microcontroller logic.' } }
+        { id: 'iy-3', text: { tr: 'Şu anda merkezde robotik projeleri yürüten öğrencilere devre temelleri ve mikrodenetleyici mantığı üzerine mentörlük yapıyorum.', en: 'I currently mentor students working on robotics projects at the center, on circuit fundamentals and microcontroller logic.' } }
       ]
     },
     {
@@ -334,7 +334,7 @@ window.SITE = {
           cap: { tr: 'Görev 1: 2 m derinlikte 10 m düz seyir, kıyıdan en az 50 m açılma, 180° dönüş ve başlangıç çizgisine otonom dönüş. Su altında GPS olmadığı için araç konumunu kendi sensörleriyle kestiriyor; sistemin ayrıntıları takıma özel olduğundan burada yer almıyor.', en: 'Mission 1: a straight 10 m run at 2 m depth, out to at least 50 m from shore, a 180° turn and an autonomous return to the start line. With no GPS underwater, the vehicle estimates its position from its own sensors; the details of the system stay within the team.' }
         }
       ],
-      years: { tr: '2024 – 2026', en: '2024 – 2026' },
+      years: { tr: '2024 – devam ediyor', en: '2024 – present' },
       title: { tr: 'TEKNOFEST Su Altı Roket Takımı (SARA)', en: 'TEKNOFEST Underwater Rocket Team (SARA)' },
       role: { tr: 'Takım Kaptanı · Elektronik Birim Sorumlusu', en: 'Team Captain · Electronics Lead' },
       text: {
@@ -351,20 +351,20 @@ window.SITE = {
         {
           fig: 'bench',
           label: { tr: 'Besleme gerilimi testi', en: 'Supply voltage test' },
-          cap: { tr: 'Güç kaynağı çıkışları multimetreyle doğrulanıyor: 5,009 V ve 12,00 V.', en: 'Checking the power supply outputs with a multimeter: 5.009 V and 12.00 V.' }
+          cap: { tr: 'Bileşenleri bağlamadan önce güç kaynağının 5 V ve 12 V çıkışlarını multimetreyle ölçerek beslemenin doğru olduğundan emin olduk.', en: 'Before connecting the components, we measured the power supply’s 5 V and 12 V outputs with a multimeter to make sure the supply was right.' }
         },
         {
           fig: 'pcbdraft',
           label: { tr: 'Kart taslağı', en: 'Board draft' },
-          cap: { tr: 'Takımın kontrol kartı için çizilen taslak; kart üretime geçmedi.', en: 'A draft layout for the team’s control board; it never went into production.' }
+          cap: { tr: 'Takımın kontrol kartı için hazırlanan taslak yerleşim.', en: 'A draft layout for the team’s control board.' }
         }
       ],
       years: { tr: '2024 – devam ediyor', en: '2024 – present' },
       title: { tr: 'TEKNOFEST Hava Savunma Sistemleri Takımı', en: 'TEKNOFEST Air Defense Systems Team' },
       role: { tr: 'Elektronik Sistem Tasarımı', en: 'Electronic System Design' },
       text: {
-        tr: 'Satıh tabanlı savunma sistemi prototiplerinin kavramsal tasarımı ve mimari planlaması. Lazer tabanlı modüllerde hedefleme hassasiyeti için odak noktası optimizasyonu; güç yönetimi, kablolama, acil durum ve lazer sistemi entegrasyonu.',
-        en: 'Conceptual design and architecture planning of surface-based defense prototypes. Focal point optimization for targeting precision in laser modules; power management, cabling, emergency and laser system integration.'
+        tr: 'Takım olarak satıh tabanlı bir hava savunma sistemi prototipi geliştiriyoruz. Ben elektronik tarafındayım: sistemin mimarisini planlıyor; güç yönetimini, kablolamayı ve acil durum devresini tasarlıyor, lazer modülünü sisteme entegre ediyorum. Lazerin hedefte daha keskin odaklanması için mercek düzenindeki odak noktasını ayarlamak da üzerinde çalıştığım işlerden biri.',
+        en: 'As a team we are building a surface-based air defense system prototype. I am on the electronics side: I plan the system architecture, design the power management, cabling and emergency circuit, and integrate the laser module. Tuning the focal point of the lens arrangement so the laser focuses more sharply on the target is another part of my work.'
       },
       tags: [{ tr: 'Elektronik tasarım', en: 'Electronics design' }, { tr: 'Lazer modülü', en: 'Laser module' }, { tr: 'Güç', en: 'Power' }]
     },
@@ -397,12 +397,12 @@ window.SITE = {
       fig: 'mesh',
       years: { tr: '2026', en: '2026' },
       title: { tr: 'Fabrika İçi Mesh IoT İzleme Sistemi', en: 'Factory Mesh IoT Monitoring System' },
-      role: { tr: 'ESP tabanlı · ders projesi', en: 'ESP-based · course project' },
+      role: { tr: 'Takım projesi · Dijital Dönüşümün Temelleri dersi', en: 'Team project · Fundamentals of Digital Transformation course' },
       text: {
-        tr: 'Fabrikada sıcaklık, nem, titreşim ve çalışma saatini izleyen bir ESP mesh ağı tasarlıyorum.',
-        en: 'Designing an in-factory ESP mesh network that monitors temperature, humidity, vibration and operating hours.'
+        tr: 'Fabrikadaki makinelerin sıcaklık, nem, titreşim ve çalışma saati verilerini ESP tabanlı bir mesh ağıyla toplayan bir izleme sistemi tasarlıyoruz. Projenin dijital dönüşüm tarafı da burada: elle tutulan kayıtların yerine sahadan sürekli gelen veriyi koymak ve bakım kararlarının bu veriye dayanmasını sağlamak.',
+        en: 'We are designing a monitoring system that collects temperature, humidity, vibration and operating-hour data from factory machines over an ESP-based mesh network. That is where the digital transformation comes in: replacing manually kept records with a steady stream of data from the floor, so that maintenance decisions can rest on that data.'
       },
-      tags: ['ESP32', 'Mesh', 'IoT']
+      tags: ['ESP32', 'Mesh', 'IoT', { tr: 'Dijital dönüşüm', en: 'Digital transformation' }, { tr: 'Takım', en: 'Team' }]
     },
     {
       id: 'uniguide',
@@ -422,10 +422,10 @@ window.SITE = {
       cap: { tr: 'Ekranlar veriye tek bir katmandan ulaşıyor; kimin neyi okuyup yazabileceğini sunucudaki kurallar belirliyor. Her değişiklik otomatik kontrollerden geçip imzalı APK olarak çıkıyor.', en: 'Screens reach the data through a single layer; server-side rules decide who can read and write what. Every change passes automated checks and ships as a signed APK.' },
       years: { tr: '2026', en: '2026' },
       title: { tr: 'FÜKampüs', en: 'FÜKampüs' },
-      role: { tr: 'Takım projesi · Mobil Uygulamalar dersi · ortak altyapı', en: 'Team project · Mobile Applications course · shared infrastructure' },
+      role: { tr: 'Takım projesi · Mobil Uygulamalar dersi', en: 'Team project · Mobile Applications course' },
       text: {
-        tr: "Fırat Üniversitesi'nde duyuruları, ders programını, ders gruplarını, yemekhaneyi ve kampüs haritasını tek uygulamada toplamayı hedefleyen bir Flutter uygulaması. Yedi kişilik ekipte koordinasyon ve ortak altyapı bende: Firebase Auth ve Firestore kurulumu, sunucu tarafı erişim kuralları ve kural testleri, ekranların veriye ulaştığı ortak CampusRepository katmanı, her Pull Request'te çalışan otomatik kontroller ve kalıcı anahtarla imzalanan APK derlemesi.",
-        en: "A Flutter app that aims to bring Firat University's announcements, class schedule, course groups, cafeteria menu and campus map into one place. In a seven-person team I handle coordination and the shared infrastructure: Firebase Auth and Firestore setup, server-side access rules and rule tests, the shared CampusRepository layer every screen reads through, automated checks on every pull request, and APK builds signed with a persistent key."
+        tr: "Fırat Üniversitesi'nde duyuruları, ders programını, ders gruplarını, yemekhaneyi ve kampüs haritasını tek uygulamada toplamayı hedefleyen bir Flutter uygulaması. Yedi kişilik bir ekip olarak geliştiriyoruz; takım kaptanlığı çoğu hafta ekipten başka birine geçiyor. Uygulama Firebase üzerinde çalışıyor: giriş Firebase Auth ile yapılıyor, veriler Firestore'da duruyor ve kimin neyi okuyup yazabileceğini sunucu tarafındaki kurallar belirliyor. Her Pull Request otomatik kontrollerden geçiyor, sürümler imzalı APK olarak çıkıyor.",
+        en: "A Flutter app that aims to bring Firat University's announcements, class schedule, course groups, cafeteria menu and campus map into one place. We build it as a seven-person team, and the captain role usually passes to someone new each week. The app runs on Firebase: sign-in goes through Firebase Auth, data lives in Firestore, and server-side rules decide who can read and write what. Every pull request passes automated checks, and releases ship as signed APKs."
       },
       tags: ['Flutter', 'Firebase', 'GitHub Actions', { tr: 'Takım', en: 'Team' }]
     }
@@ -442,24 +442,24 @@ window.SITE = {
         { id: 'flutter', label: 'Flutter / Firebase', used: [{ tr: 'FÜKampüs: Firestore kuralları ve ortak veri katmanı', en: 'FÜKampüs: Firestore rules and the shared data layer' }] },
         { id: 'cubeide', label: 'STM32CubeIDE' },
         { id: 'cubemx', label: 'STM32CubeMX' },
-        { id: 'git', label: 'Git' },
+        { id: 'git', label: 'Git', used: [{ tr: 'FÜKampüs: yedi kişilik ekipte dal ve Pull Request akışı', en: 'FÜKampüs: branch and pull request workflow in a seven-person team' }, { tr: "Bu web sitesi: kaynak kodu GitHub'da", en: 'This website: source code on GitHub' }] },
         { id: 'gha', label: 'GitHub Actions', used: [{ tr: "FÜKampüs: her Pull Request'te otomatik kontroller ve imzalı APK derlemesi", en: 'FÜKampüs: automated checks on every pull request and signed APK builds' }] },
-        { id: 'vs', label: 'Visual Studio' },
-        { id: 'ssms', label: 'SSMS' }
+        { id: 'vs', label: 'Visual Studio', used: [{ tr: 'Ders projesi: C# Windows Forms ile CRM uygulaması', en: 'Course project: a C# Windows Forms CRM app' }] },
+        { id: 'ssms', label: 'SSMS', used: [{ tr: 'Veri tabanı dersi: SQL Server üzerinde şehir trafiği veritabanı', en: 'Database course: a city traffic database on SQL Server' }] }
       ]
     },
     {
       id: 'lang',
       name: { tr: 'Programlama dilleri', en: 'Programming languages' },
       items: [
-        { id: 'c', label: 'C' },
-        { id: 'cpp', label: 'C++' },
+        { id: 'c', label: 'C', used: [{ tr: 'Repkon: NUCLEO-8L152R8 (STM8) üzerinde ivmeölçeri okuyan firmware', en: 'Repkon: firmware on the NUCLEO-8L152R8 (STM8) that reads the accelerometer' }] },
+        { id: 'cpp', label: 'C++', used: [{ tr: 'Deneyap Kart v2 haritalandırma robotunun alt sistem yazılımı', en: 'Subsystem software of the Deneyap Kart v2 mapping robot' }, { tr: 'Deneyap Kart için OTA, telemetri ve SD kart örnekleri', en: 'OTA, telemetry and SD card examples for Deneyap Kart' }] },
         { id: 'py', label: 'Python', used: [{ tr: 'Repkon: PyQt5 sensör izleme uygulaması', en: 'Repkon: PyQt5 sensor monitoring app' }] },
-        { id: 'web', label: 'HTML / CSS / JS', used: [{ tr: 'T3 Gemstone O1 elektriksel test arayüzü', en: 'T3 Gemstone O1 electrical test interface' }] },
+        { id: 'web', label: 'HTML / CSS / JS', used: [{ tr: 'T3 Gemstone O1 elektriksel test arayüzü', en: 'T3 Gemstone O1 electrical test interface' }, { tr: 'Deneyap Blok için etkileşimli kart paneli', en: 'Interactive board panel for Deneyap Blok' }, { tr: 'Bu web sitesi', en: 'This website' }] },
         { id: 'dart', label: 'Dart', used: [{ tr: 'FÜKampüs mobil uygulaması', en: 'FÜKampüs mobile app' }] },
-        { id: 'cs', label: 'C#' },
-        { id: 'java', label: 'Java' },
-        { id: 'sql', label: 'SQL' }
+        { id: 'cs', label: 'C#', used: [{ tr: 'Ders projesi: müşteri, temsilci ve talep yönetimi yapan CRM uygulaması', en: 'Course project: a CRM app for managing customers, representatives and requests' }, { tr: 'C# Programlama 101 eğitimi', en: 'C# Programming 101 course' }] },
+        { id: 'java', label: 'Java', used: [{ tr: 'Programlama dersleri: NetBeans ile algoritma alıştırmaları', en: 'Programming courses: algorithm exercises in NetBeans' }] },
+        { id: 'sql', label: 'SQL', used: [{ tr: 'Veri tabanı dersi: şehir trafiği veritabanı; tablolar, saklı yordamlar, tetikleyiciler ve transaction', en: 'Database course: a city traffic database with tables, stored procedures, triggers and transactions' }] }
       ]
     },
     {
@@ -467,7 +467,7 @@ window.SITE = {
       name: { tr: 'RTOS ve işletim sistemi', en: 'RTOS and operating systems' },
       items: [
         { id: 'freertos', label: 'FreeRTOS', used: [{ tr: 'Haritalandırma robotu: ağ ve kontrol işlerini iki çekirdeğe ayırma', en: 'Mapping robot: splitting networking and control across two cores' }] },
-        { id: 'baremetal', label: 'Bare-metal', used: [{ tr: 'Repkon: NUCLEO-8L152R8 üzerinde anomali tespiti', en: 'Repkon: anomaly detection on the NUCLEO-8L152R8' }] },
+        { id: 'baremetal', label: 'Bare-metal', used: [{ tr: "Repkon: NUCLEO-8L152R8 üzerinde ST'nin çevre birimi kütüphanesiyle SPI ve USART", en: "Repkon: SPI and USART on the NUCLEO-8L152R8 with ST's peripheral library" }] },
         { id: 'linux', label: { tr: 'Gömülü Linux', en: 'Embedded Linux' }, used: [{ tr: 'Repkon: Raspberry Pi 5 üzerinde sensör uygulaması', en: 'Repkon: sensor app on Raspberry Pi 5' }, { tr: 'Boru hattı anomali tespiti', en: 'Pipeline anomaly detection' }] }
       ]
     },
@@ -475,9 +475,9 @@ window.SITE = {
       id: 'bus',
       name: { tr: 'Haberleşme', en: 'Communication' },
       items: [
-        { id: 'uart', label: 'UART', used: [{ tr: 'T3 Gemstone O1: master-slave yöntemle PD kontrolcüye firmware', en: 'T3 Gemstone O1: PD controller firmware via master and slave boards' }] },
-        { id: 'i2c', label: 'I²C', used: [{ tr: 'Deneyap Kart OTA örneği: OLED ekran', en: 'Deneyap Kart OTA example: OLED display' }] },
-        { id: 'spi', label: 'SPI', used: [{ tr: 'Repkon: STEVAL-MKI179V1 ivmeölçerini okuma', en: 'Repkon: reading the STEVAL-MKI179V1 accelerometer' }] },
+        { id: 'uart', label: 'UART', used: [{ tr: 'Repkon: ivme verisini USART üzerinden bilgisayara aktarma', en: 'Repkon: streaming acceleration data to a PC over USART' }, { tr: 'T3 Gemstone O1: master-slave yöntemle PD kontrolcüye firmware', en: 'T3 Gemstone O1: PD controller firmware via master and slave boards' }] },
+        { id: 'i2c', label: 'I²C', used: [{ tr: 'Deneyap Kart OTA örneği: OLED ekran', en: 'Deneyap Kart OTA example: OLED display' }, { tr: "Repkon: adaptör kartta pull-up eksikliğini bulup SPI'ye geçiş", en: 'Repkon: finding the missing pull-ups on the adapter board and moving to SPI' }] },
+        { id: 'spi', label: 'SPI', used: [{ tr: 'Repkon: NUCLEO-8L152R8 ile STEVAL-MKI179V1 (LIS2DW12) ivmeölçerini okuma', en: 'Repkon: reading the STEVAL-MKI179V1 (LIS2DW12) accelerometer with the NUCLEO-8L152R8' }] },
         { id: 'ibus', label: 'iBUS / PWM', used: [{ tr: 'VTOL İHA: FS-iA10B alıcısı ve yedi PWM çıkışının planı', en: 'VTOL UAV: FS-iA10B receiver and the plan for seven PWM outputs' }] },
         { id: 'tcp', label: 'TCP/IP', used: [{ tr: 'Haritalandırma robotunun TCP üzerinden uzaktan kontrolü', en: 'Remote control of the mapping robot over TCP' }, { tr: 'Deneyap Kart: Telnet ile kablosuz telemetri örneği', en: 'Deneyap Kart: wireless telemetry example over Telnet' }] }
       ]
@@ -486,11 +486,11 @@ window.SITE = {
       id: 'mcu',
       name: { tr: 'Mikrodenetleyiciler ve kartlar', en: 'Microcontrollers and boards' },
       items: [
-        { id: 'stm32', label: 'STM32 / STM8', used: [{ tr: 'Repkon: NUCLEO-8L152R8 üzerinde gerçek zamanlı anomali tespiti', en: 'Repkon: real-time anomaly detection on the NUCLEO-8L152R8' }, { tr: 'Repkon: STM32F103C8T6, NUCLEO-L476RG ve NUCLEO-8L152R8 karşılaştırması', en: 'Repkon: comparing STM32F103C8T6, NUCLEO-L476RG and NUCLEO-8L152R8' }, { tr: 'Boru hattı anomali tespiti', en: 'Pipeline anomaly detection' }] },
+        { id: 'stm32', label: 'STM32 / STM8', used: [{ tr: 'Repkon: NUCLEO-8L152R8 (STM8) üzerinde ivmeölçer okuma', en: 'Repkon: reading an accelerometer on the NUCLEO-8L152R8 (STM8)' }, { tr: 'Repkon: STM32F103C8T6, NUCLEO-L476RG ve NUCLEO-8L152R8 karşılaştırması', en: 'Repkon: comparing STM32F103C8T6, NUCLEO-L476RG and NUCLEO-8L152R8' }, { tr: 'Boru hattı anomali tespiti', en: 'Pipeline anomaly detection' }] },
         { id: 'esp32', label: 'ESP32 / Deneyap Kart', used: [{ tr: 'Deneyap Kart v2 haritalandırma robotu', en: 'Deneyap Kart v2 mapping robot' }, { tr: 'Deneyap Kart için OTA, telemetri ve SD kart örnekleri', en: 'OTA, telemetry and SD card examples for Deneyap Kart' }, { tr: 'Fabrika içi mesh IoT', en: 'Factory mesh IoT' }] },
         { id: 'gemstone', label: 'T3 Gemstone O1', used: [{ tr: 'VTOL İHA: uçuş kontrolcüsü olarak ilk uçuş', en: 'VTOL UAV: first flight with it as the flight controller' }, { tr: '489 kartın donanım testi ve test arayüzü', en: 'Hardware tests on 489 boards and the test interface' }, { tr: 'Bitirme projesi', en: 'Graduation project' }, { tr: 'Ekosistemde gönüllü geliştirici', en: 'Volunteer developer in the ecosystem' }] },
         { id: 'rpi', label: 'Raspberry Pi', used: [{ tr: 'Repkon: canlı sensör izleme uygulaması', en: 'Repkon: live sensor monitoring app' }, { tr: 'Boru hattı anomali tespiti', en: 'Pipeline anomaly detection' }] },
-        { id: 'arduino', label: 'Arduino' }
+        { id: 'arduino', label: 'Arduino', used: [{ tr: 'Hava Savunma: lazer modülünü röle üzerinden süren kod', en: 'Air Defense: code that drives the laser module through a relay' }, { tr: 'Ders ödevleri: 8x8 LED matris ve sayaç devreleri', en: 'Course assignments: an 8x8 LED matrix and counter circuits' }] }
       ]
     },
     {
@@ -498,7 +498,7 @@ window.SITE = {
       name: { tr: 'Devre tasarımı ve simülasyon', en: 'Circuit design and simulation' },
       items: [
         { id: 'altium', label: 'Altium Designer' },
-        { id: 'proteus', label: 'Proteus' },
+        { id: 'proteus', label: 'Proteus', used: [{ tr: 'Ders ödevleri: Arduino ile 8x8 LED matris ve sayaç devrelerinin simülasyonu', en: 'Course assignments: simulating an Arduino 8x8 LED matrix and counter circuits' }] },
         { id: 'ltspice', label: 'LTspice' },
         { id: 'fritzing', label: 'Fritzing / Inkscape', used: [{ tr: 'Deneyap Kart v2 Fritzing parçasını baştan tasarlama', en: 'Designing the Deneyap Kart v2 Fritzing part from scratch' }] }
       ]

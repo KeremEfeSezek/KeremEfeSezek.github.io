@@ -388,7 +388,7 @@ window.FIG = (() => {
       meter(286, '12.00', L(lang, '12,00 V', '12.00 V')));
   }
 
-  // draft control board layout; never manufactured
+  // draft layout of the team's control board
   function pcbdraft(lang) {
     const drv = y => rect(40, y, 54, 42, 'fp', 2) + `<path class="fpins" d="M46 ${y + 4}V${y + 38}M88 ${y + 4}V${y + 38}"/>` + rect(56, y + 12, 22, 18, '', 1.5);
     let jst = '';
@@ -403,7 +403,7 @@ window.FIG = (() => {
       rect(170, 30, 20, 10, 'fp', 1.5) +
       rect(256, 20, 30, 22, 'fp', 2) + jst +
       `<circle cx="268" cy="80" r="12" stroke-dasharray="2 2"/>` + T(268, 83, 'HSS', 'fxs') +
-      T(170, 210, L(lang, 'taslak · üretilmedi', 'draft · not manufactured'), 'fs fhot'));
+      T(170, 210, L(lang, 'taslak', 'draft'), 'fs fhot'));
   }
 
   /* ---------- projects without source images ---------- */

@@ -371,15 +371,15 @@
       try {
         chars = []; carets = [0]; clicked = -1;
         render();
-        await step(500);
+        await step(700);
 
         for (const c of CONSONANTS) {
           chars.push({ c });
           carets = [chars.length];
           render();
-          await step(rand(70, 150));
+          await step(rand(170, 270));
         }
-        await step(420);
+        await step(700);
 
         // first click moves the caret, the rest are ctrl+click and add one each
         carets = [];
@@ -389,28 +389,28 @@
           carets.push(gap);
           clicked = gap;
           render();
-          await step(rand(150, 210));
+          await step(rand(260, 340));
         }
         clicked = -1;
         render();
-        await step(260);
+        await step(450);
 
         // every caret types "e" at once
         key('<kbd>e</kbd>');
         for (let k = carets.length - 1; k >= 0; k--) chars.splice(carets[k], 0, { c: 'e', hl: true, enter: true });
         carets = carets.map((p, k) => p + k + 1);
         render();
-        await step(650);
+        await step(950);
 
         key('<kbd>esc</kbd>');
         carets = [carets[0]];
         render();
-        await step(300);
+        await step(500);
 
         key('<kbd>end</kbd>');
         carets = [chars.length];
         render();
-        await step(450);
+        await step(650);
 
         key(null);
         chars.forEach(c => (c.hl = false));
