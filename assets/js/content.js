@@ -334,7 +334,7 @@ window.SITE = {
           cap: { tr: 'Görev 1: 2 m derinlikte 10 m düz seyir, kıyıdan en az 50 m açılma, 180° dönüş ve başlangıç çizgisine otonom dönüş. Su altında GPS olmadığı için araç konumunu kendi sensörleriyle kestiriyor; sistemin ayrıntıları takıma özel olduğundan burada yer almıyor.', en: 'Mission 1: a straight 10 m run at 2 m depth, out to at least 50 m from shore, a 180° turn and an autonomous return to the start line. With no GPS underwater, the vehicle estimates its position from its own sensors; the details of the system stay within the team.' }
         }
       ],
-      years: { tr: '2024 – devam ediyor', en: '2024 – present' },
+      years: { tr: '2024 – 2026', en: '2024 – 2026' },
       title: { tr: 'TEKNOFEST Su Altı Roket Takımı (SARA)', en: 'TEKNOFEST Underwater Rocket Team (SARA)' },
       role: { tr: 'Takım Kaptanı · Elektronik Birim Sorumlusu', en: 'Team Captain · Electronics Lead' },
       text: {
@@ -359,12 +359,12 @@ window.SITE = {
           cap: { tr: 'Takımın kontrol kartı için hazırlanan taslak yerleşim.', en: 'A draft layout for the team’s control board.' }
         }
       ],
-      years: { tr: '2024 – devam ediyor', en: '2024 – present' },
+      years: { tr: '2024 – 2026', en: '2024 – 2026' },
       title: { tr: 'TEKNOFEST Hava Savunma Sistemleri Takımı', en: 'TEKNOFEST Air Defense Systems Team' },
       role: { tr: 'Elektronik Sistem Tasarımı', en: 'Electronic System Design' },
       text: {
-        tr: 'Takım olarak satıh tabanlı bir hava savunma sistemi prototipi geliştiriyoruz. Ben elektronik tarafındayım: sistemin mimarisini planlıyor; güç yönetimini, kablolamayı ve acil durum devresini tasarlıyor, lazer modülünü sisteme entegre ediyorum. Lazerin hedefte daha keskin odaklanması için mercek düzenindeki odak noktasını ayarlamak da üzerinde çalıştığım işlerden biri.',
-        en: 'As a team we are building a surface-based air defense system prototype. I am on the electronics side: I plan the system architecture, design the power management, cabling and emergency circuit, and integrate the laser module. Tuning the focal point of the lens arrangement so the laser focuses more sharply on the target is another part of my work.'
+        tr: 'Takım olarak satıh tabanlı bir hava savunma sistemi prototipi geliştirdik. Ben elektronik tarafındaydım: sistemin mimarisini planladım; güç yönetimini, kablolamayı ve acil durum devresini tasarladım, lazer modülünü sisteme entegre ettim. Lazerin hedefte daha keskin odaklanması için mercek düzenindeki odak noktasını ayarlamak da üzerinde çalıştığım işlerden biriydi.',
+        en: 'As a team we built a surface-based air defense system prototype. I was on the electronics side: I planned the system architecture, designed the power management, cabling and emergency circuit, and integrated the laser module. Tuning the focal point of the lens arrangement so the laser focused more sharply on the target was another part of my work.'
       },
       tags: [{ tr: 'Elektronik tasarım', en: 'Electronics design' }, { tr: 'Lazer modülü', en: 'Laser module' }, { tr: 'Güç', en: 'Power' }]
     },
@@ -440,8 +440,8 @@ window.SITE = {
         { id: 'ardupilot', label: 'ArduPilot / Mission Planner', used: [{ tr: "VTOL İHA: Pixhawk'tan T3 Gemstone O1'e geçiş ve ilk uçuş", en: 'VTOL UAV: moving from Pixhawk to T3 Gemstone O1 and the first flight' }] },
         { id: 'pyqt', label: 'PyQt5 / pyqtgraph', used: [{ tr: 'Repkon: canlı sensör izleme uygulaması', en: 'Repkon: live sensor monitoring app' }] },
         { id: 'flutter', label: 'Flutter / Firebase', used: [{ tr: 'FÜKampüs: Firestore kuralları ve ortak veri katmanı', en: 'FÜKampüs: Firestore rules and the shared data layer' }] },
-        { id: 'cubeide', label: 'STM32CubeIDE' },
-        { id: 'cubemx', label: 'STM32CubeMX' },
+        { id: 'cubeide', label: 'STM32CubeIDE', used: [{ tr: 'Boru hattı anomali tespiti: STM32 yazılımı', en: 'Pipeline anomaly detection: STM32 firmware' }] },
+        { id: 'cubemx', label: 'STM32CubeMX', used: [{ tr: 'Boru hattı anomali tespiti: STM32 pin ve saat yapılandırması', en: 'Pipeline anomaly detection: STM32 pin and clock configuration' }, { tr: 'Repkon: NUCLEO-8L152R8 pin yapılandırması (STM8CubeMX)', en: 'Repkon: NUCLEO-8L152R8 pin configuration (STM8CubeMX)' }] },
         { id: 'git', label: 'Git', used: [{ tr: 'FÜKampüs: yedi kişilik ekipte dal ve Pull Request akışı', en: 'FÜKampüs: branch and pull request workflow in a seven-person team' }, { tr: "Bu web sitesi: kaynak kodu GitHub'da", en: 'This website: source code on GitHub' }] },
         { id: 'gha', label: 'GitHub Actions', used: [{ tr: "FÜKampüs: her Pull Request'te otomatik kontroller ve imzalı APK derlemesi", en: 'FÜKampüs: automated checks on every pull request and signed APK builds' }] },
         { id: 'vs', label: 'Visual Studio', used: [{ tr: 'Ders projesi: C# Windows Forms ile CRM uygulaması', en: 'Course project: a C# Windows Forms CRM app' }] },
@@ -497,9 +497,9 @@ window.SITE = {
       id: 'pcb',
       name: { tr: 'Devre tasarımı ve simülasyon', en: 'Circuit design and simulation' },
       items: [
-        { id: 'altium', label: 'Altium Designer' },
+        { id: 'altium', label: 'Altium Designer', used: [{ tr: 'Hava Savunma: kontrol kartı taslağı', en: 'Air Defense: control board draft' }] },
         { id: 'proteus', label: 'Proteus', used: [{ tr: 'Ders ödevleri: Arduino ile 8x8 LED matris ve sayaç devrelerinin simülasyonu', en: 'Course assignments: simulating an Arduino 8x8 LED matrix and counter circuits' }] },
-        { id: 'ltspice', label: 'LTspice' },
+        { id: 'ltspice', label: 'LTspice', used: [{ tr: 'Hava Savunma: devre simülasyonları', en: 'Air Defense: circuit simulations' }] },
         { id: 'fritzing', label: 'Fritzing / Inkscape', used: [{ tr: 'Deneyap Kart v2 Fritzing parçasını baştan tasarlama', en: 'Designing the Deneyap Kart v2 Fritzing part from scratch' }] }
       ]
     }
