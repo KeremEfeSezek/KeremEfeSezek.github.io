@@ -1,8 +1,8 @@
-# keremefesezek.github.io
+# keremefesezek.com
 
 Kişisel web sitem. Gömülü sistemler, projelerim ve özgeçmişim.
 
-Site derleme adımı olmayan düz HTML, CSS ve JavaScript'ten oluşuyor; GitHub Pages `main` dalını doğrudan yayınlıyor.
+Site derleme adımı olmayan düz HTML, CSS ve JavaScript'ten oluşuyor. GitHub Pages `main` dalını doğrudan yayınlıyor, alan adı `CNAME` dosyasında yazılı. Eski `keremefesezek.github.io` adresi yeni adrese yönleniyor.
 
 ## Yapı
 

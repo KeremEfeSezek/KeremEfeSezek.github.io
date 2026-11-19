@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const BASE = 'https://keremefesezek.github.io/';
+const BASE = 'https://keremefesezek.com/';
 
 // Paste the content value of Google Search Console's "HTML tag" here to verify the site.
 const GOOGLE_SITE_VERIFICATION = 'sbipD_O8OPR93pn6F17DlGRZswMTGSp6QvcxR0soxds';
